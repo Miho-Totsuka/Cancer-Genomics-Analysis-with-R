@@ -305,7 +305,7 @@ In particular, I am interested in how computational methods can distinguish real
 ## Repository Structure
 
 ```text
-Analyzing-Cancer-Data-through-Graph/
+Cancer-Genomics-Analysis-with-R/
 │
 ├── README.md
 │
