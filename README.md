@@ -12,15 +12,6 @@ For my main applied analyses, I focused on kidney renal clear cell carcinoma (KI
 
 This repository contains the R code I used while learning, the analyses I organized using those skills, and the graphs produced from those analyses.
 
-## Key Analyses
-
-| Analysis | Question | Method |
-|---|---|---|
-| KIRC Mutation Landscape | Which genes are frequently mutated? | Oncoplot |
-| SETD2 Mutation Positions | Where do SETD2 mutations occur? | Lollipop plot |
-| SETD2 Expression | Does expression differ between normal and tumor samples? | Box plot |
-| Survival Analysis | How does survival differ by clinical stage? | Kaplan-Meier |
-
 ## Project at a Glance
 
 | Analysis                     | Biological Question                                            | Method                            | Main Observation                                                                                     |
