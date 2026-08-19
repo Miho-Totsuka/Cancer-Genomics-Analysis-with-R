@@ -142,7 +142,7 @@ I used a lollipop plot to visualize the locations and types of SETD2 mutations.
 
 The SETD2 mutations were spread across different positions of the protein rather than being concentrated at one clear hotspot.
 
-Not many patients appeared to have mutations at exactly the same position. I also noticed mutations around important regions of the protein, including around the SET domain.
+Not many patients appeared to have mutations at exactly the same position. I observed mutations in and around important regions of the protein, including the SET domain.
 
 This was interesting because the SET domain is important for SETD2's methyltransferase function.
 
