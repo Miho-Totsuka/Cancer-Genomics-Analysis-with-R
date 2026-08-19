@@ -12,6 +12,15 @@ For my main applied analyses, I focused on kidney renal clear cell carcinoma (KI
 
 This repository contains the R code I used while learning, the analyses I organized using those skills, and the graphs produced from those analyses.
 
+## Project at a Glance
+
+| Analysis                     | Biological Question                                            | Method                            | Main Observation                                                                                     |
+| ---------------------------- | -------------------------------------------------------------- | --------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| **KIRC Mutation Landscape**  | Which genes are frequently mutated in KIRC?                    | `maftools` oncoplot               | VHL and PBRM1 had the highest mutation percentages shown, while SETD2 was mutated in 12% of samples. |
+| **SETD2 Mutation Positions** | Where do SETD2 mutations occur within the protein?             | Lollipop plot                     | SETD2 mutations were distributed across the protein rather than concentrated at one clear hotspot.   |
+| **SETD2 Expression**         | Does SETD2 expression differ between normal and tumor tissue?  | Box plot + statistical comparison | SETD2 expression was generally lower in tumor samples than in normal samples.                        |
+| **KIRC Survival**            | How does survival differ between Stage 1 and Stage 4 patients? | Kaplan-Meier survival analysis    | Stage 1 patients had a higher survival probability than Stage 4 patients (`p < 0.0001`).             |
+
 ## Why I Did This
 
 I am interested in computational biology and bioinformatics.
@@ -250,15 +259,22 @@ Understanding these limitations was an important part of learning how to interpr
 
 The Rosetta Institute workshop provided the instructional foundation and workflows used in this project.
 
-I learned the R and bioinformatics methods through the workshop and applied them to cancer genomic data.
+My work in developing this repository included:
 
-I then reorganized the work into separate lesson and analysis folders, cleaned the analysis scripts, generated the figures, and reviewed the results.
+* learning and applying R and bioinformatics workflows introduced during the workshop
+* organizing the workshop learning materials into the `01_Lessons/` directory
+* reorganizing and cleaning the analysis scripts
+* applying the methods mainly to TCGA-KIRC data with a focus on SETD2
+* generating and organizing the final visualizations
+* comparing mutation, expression, and clinical data
+* interpreting the results shown in the figures
+* documenting the analyses, limitations, and future questions in this README
 
 The `01_Lessons/` directory documents my learning process, while the `03_Analysis/` directory contains the cleaned analyses using those methods.
 
 The interpretations of the graphs in this README are based on my own observations and on work I had previously written about SETD2 and KIRC.
 
-I also used AI to help me organize the repository, improve some of the English, debug and clean parts of the R code, and understand unfamiliar scientific terminology. I reviewed the results and interpretations and referred back to the original data and scientific sources.
+I also used AI as a learning and debugging aid. It helped me organize the repository, improve some of the English, identify and correct coding problems, and understand unfamiliar scientific terminology. I reviewed the suggestions, checked the analysis outputs myself, and referred back to the original data and scientific sources.
 
 ## Connection to Computational Biology
 
@@ -276,15 +292,13 @@ This connects to my broader interest in **environmental DNA (eDNA)** and computa
 
 ## Future Work
 
-I would like to continue learning how to choose and apply appropriate statistical methods to biological datasets.
-
-I would also like to explore how different types of genomic information, such as mutation, gene expression, and clinical data, can be analyzed together rather than separately.
-
-One question I would like to investigate is whether **SETD2 mutation status or SETD2 expression level is associated with patient survival**, rather than only comparing patients by cancer stage.
+One question I would like to investigate next is whether **SETD2 mutation status or SETD2 expression level is associated with patient survival**, rather than only comparing patients by clinical stage.
 
 I would also like to compare SETD2 across different cancer types to see whether similar mutation and expression patterns appear elsewhere.
 
-In the future, I would like to apply what I learned about biological data, variation, and computational analysis to my interest in environmental DNA.
+As I continue learning, I would like to develop stronger statistical skills and learn how multiple types of genomic information—such as mutation, gene expression, and clinical data—can be analyzed together.
+
+In the future, I would also like to apply what I learned about biological data, variation, and computational analysis to my interest in environmental DNA.
 
 In particular, I am interested in how computational methods can distinguish real biological signals from experimental or sequencing noise.
 
@@ -310,6 +324,7 @@ Analyzing-Cancer-Data-through-Graph/
 │   └── 04_kirc_stage_survival.R
 │
 └── 04_Data/
+    └── README.md
 ```
 
 ## Data Sources
@@ -320,7 +335,7 @@ The analyses include mutation, gene expression, and clinical data related to TCG
 
 Some datasets were provided or prepared as part of the Rosetta Institute workshop, while other information was accessed through cancer genomics resources introduced during the workshop.
 
-The original data files are kept separately from the analysis code where appropriate.
+The large data files used locally for the analyses are not included in this public repository. The `04_Data/README.md` file documents the expected data files and their sources.
 
 ## References
 
